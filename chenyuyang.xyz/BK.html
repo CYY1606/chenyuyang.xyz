@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>套用模板，实验测试（记录）</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Linux服务器-导航栏</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://chenyuyang.xyz/" target="_blank">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ftp://chenyuyang.xyz/" target="_blank">FTP</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">菜单</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://cert.360.cn/" target="_blank">360应急响应中心</a>
+              <a class="dropdown-item" href="https://bbs.kafan.cn/" target="_blank">卡饭论坛（主页）</a>
+				 <a class="dropdown-item" href="https://www.freebuf.com/" target="_blank">freebuf官网</a>
+				<a class="dropdown-item" href="https://www.anquanke.com/" target="_blank">安全客官网</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://github.com/" target="_blank">github官网</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search未开放" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div class="container mt-2">
+      <div class="row">
+        <div class="col-12">
+          <div class="jumbotron">
+            <h1 class="text-center">分享页面</h1>
+            <div class="row justify-content-center">
+              <div class="col-auto">
+                <p><a class="btn btn-success btn-lg" href="https://chenyuyang.xyz/" role="button" target="_blank">网站主页</a> </p>
+              </div>
+              <div class="col-auto">
+                <p><a class="btn btn-primary btn-lg" href="#" role="button" target="_blank">记录生活</a> </p>
+              </div>
+            </div>
+            <p class="text-center">记录生活，分享技术。</p>
+            <img src="images/1200X400.jpg" alt="" class="img-fluid"> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="text-center col-md-6 col-12">
+          <h3>实验测试</h3>
+          <p>此网站是实验测试使用的，我用于学习服务器。</p>
+          <a class="btn btn-danger btn-lg" href="https://chenyuyang.xyz/" role="button" target="_blank">网站实验室</a>
+        </div>
+        <div class="text-center col-md-6 col-12">
+          <h3>技术积累</h3>
+          <p>计算机学习积累经验与技术，IT论坛有很多。</p>
+          <a class="btn btn-info btn-lg" href="https://www.csdn.net/" role="button" target="_blank">技术分享栏</a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2>技术1</h2>
+          <p>关机指令。（shutdown -s -t xx）<br>
+重启指令。（shutdown -r -t xx）<br>
+注销指令。（shutdown -l -t xx）<br>
+激活查询：slmgr.vbs -xpr       </p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2>技术2</h2>
+          <p>命令查看详细的许可证信息：slmgr.vbs -dlv   <br>   
+系统版本查询：winver        <br> 
+组策略编辑器：gpedit.msc<br> 
+内存测试：mdsched.exe<br> 
+修复系统：sfc /scannow         <br>                  引导、启动项管理：MSConfig
+</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2>技术3</h2>
+          <p>开启卓越性能模式： <br>在Windows Powershell 中输入 <br>powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2>技术4</h2>
+          <p>Windows系统故障修复<br>
+			  管理员权限打开命令行窗口<br>
+
+Dism /Online /Cleanup-Image /ScanHealth<br>
+
+
+
+Dism /Online /Cleanup-Image /CheckHealth<br>
+
+
+
+DISM /Online /Cleanup-image /RestoreHealth<br>
+
+
+
+sfc /SCANNOW
+		  </p>
+        </div>
+      </div>
+    </div>
+    <hr>
+   
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="images/linux.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Linux</h5>
+              <p class="card-text">该操作系统的内核由林纳斯·托瓦兹在1991年10月5日首次发布</p>
+              <a href="https://www.deepin.org/" class="btn btn-primary" target="_blank">国内Linux系统网站</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="images/win.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Windows</h5>
+              <p class="card-text">MicrosoftWindows操作系统是美国微软公司研发的一套操作系统</p>
+              <a href="https://www.microsoftstore.com.cn/c/windows" class="btn btn-primary" target="_blank">微软官网Windows</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container"> </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-md-0 mb-2">
+          <h2>联系方式</h2>
+          <address>
+            <strong>服务器管理员</strong><br>
+           江苏省泰州市<br>
+           QQ:1606692179<br>
+            <abbr title="Phone">电话号码</abbr> ………………
+          </address>
+          <h4>如有问题请联系</h4>
+          <div class="row">
+            <div class="col-2"><img class="rounded-circle" src="images/32X32.gif" alt=""></div>
+            <div class="col-2"><img class="rounded-circle" src="images/32X32.gif" alt=""></div>
+            <div class="col-2"><img class="rounded-circle" src="images/32X32.gif" alt=""></div>
+            <div class="col-2"><img class="rounded-circle" src="images/32X32.gif" alt=""></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <h2>今日心情1</h2>
+          <ul class="list-unstyled">
+            <li class="media">
+            
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">2020-6-1</h5>
+                <p class="mb-0">希望和解问题，可以到此为止，不想继续纠缠不清。<br>我觉得吧时间花在学习计算机技术上面更好。</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-12">
+          <h2>待补充2</h2>
+          <p align="center">待补充</p>
+          
+        </div>
+      </div>
+    </div>
+    <hr>
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p> <a href="http://www.beian.miit.gov.cn/" target="_blank">
+              <unsubscribe style="color: #888888; text-decoration: underline; font-family: source-sans-pro, sans-serif;"> <br/><br/>苏ICP备20008244号<br/><br/></unsubscribe>
+      </a></p>
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32120202010392" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="./1.gif" style="float:left;"/><p style="float: left; height: 20px; line-height: 20px; margin: 0px 0px 0px 5px; color: #939393; font-family: source-sans-pro, sans-serif; font-style: normal;">苏公网安备32120202010392号</p></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.0.0.js"></script>
+  </body>
+</html>
